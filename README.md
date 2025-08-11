@@ -1,5 +1,5 @@
 XIAO ESP32S3 Yes/No Voice Inference (Edge Impulse)
-Important: This project works only with the ESP32 board package version 2.0.16 in Arduino IDE. Please downgrade your ESP32 board version to 2.0.16 before compiling. Tested on Seeed XIAO ESP32S3. ✅
+Important: This project works only with the ESP32 board package version 2.0.16 in Arduino IDE. Please downgrade your ESP32 board version to 2.0.16 before compiling. Tested on Seeed XIAO ESP32S3. 
 
 
 
