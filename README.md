@@ -7,18 +7,21 @@ Overview
 This project runs an Edge Impulse “Yes/No” keyword spotting model on the Seeed XIAO ESP32S3 with its onboard PDM microphone to control the onboard LED based on voice commands. It captures audio via I2S, performs on-device inference, and toggles the LED when confidence exceeds a threshold.
 
 Hardware
-Seeed XIAO ESP32S3 (Sense variant recommended with onboard PDM mic)
 
-Onboard PDM microphone (DATA GPIO41, CLK GPIO42 on XIAO ESP32S3 Sense)
+1.Seeed XIAO ESP32S3 (Sense variant recommended with onboard PDM mic)
+
+2.Onboard PDM microphone (DATA GPIO41, CLK GPIO42 on XIAO ESP32S3 Sense)
 
 Software Requirements
-Arduino IDE 2.x
 
-ESP32 Boards package: 2.0.16 (required)
+1.Arduino IDE 2.x
 
-Edge Impulse Arduino library exported for your project (e.g., XIAO_esp32S3_YesNo_inferencing.zip)
+2.ESP32 Boards package: 2.0.16 (required)
 
-Before You Start
+3.Edge Impulse Arduino library exported for your project (e.g., XIAO_esp32S3_YesNo_inferencing.zip)
+
+Before You Start:-
+
 Downgrade ESP32 core to 2.0.16:
 
 Arduino IDE → Tools → Board → Boards Manager
@@ -33,7 +36,10 @@ Tools → Board → ESP32 → Seeed XIAO_ESP32S3
 
 Tools → Port → your XIAO COM port
 
+
+
 How to Install a .ZIP Library in Arduino IDE
+
 Download the Edge Impulse Arduino library for your project as a .zip.
 
 In Arduino IDE:
@@ -48,7 +54,8 @@ Restart IDE if examples do not appear.
 
 Note: Do not unzip the library before adding it. If you face issues, ensure the library contains at least a .h/.cpp and is not nested inside multiple folders.
 
-Project Behavior
+Project Behavior:
+
 Captures 16 kHz audio using I2S from the onboard PDM mic.
 
 Runs the Edge Impulse model to classify “yes” / “no”.
